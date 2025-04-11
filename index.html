@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sea Breeze - Aching Piano</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+    }
+
+    .card {
+      max-width: 400px;
+      width: 100%;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      display: block;
+    }
+
+    .card-content {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .artist {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .player {
+      margin-bottom: 1rem;
+    }
+
+    audio::-webkit-media-controls-download-button {
+      display: none;
+    }
+
+    audio {
+      width: 100%;
+    }
+
+    .youtube {
+      font-size: 0.9rem;
+      color: #1a73e8;
+      text-decoration: none;
+    }
+
+    .youtube:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="seabreeze.jpg" alt="Sea Breeze イラスト" />
+    <div class="card-content">
+      <div class="title">Sea Breeze</div>
+      <div class="artist">by Aching Piano</div>
+      <div class="player">
+        <audio controls controlsList="nodownload">
+          <source src="AchingPiano_01.mp3" type="audio/mpeg">
+          お使いのブラウザは音声再生に対応していません。
+        </audio>
+      </div>
+      <a class="youtube" href="https://www.youtube.com/@achingpiano1083" target="_blank">
+        YouTubeチャンネルを見る
+      </a>
+    </div>
+  </div>
+</body>
+</html>
